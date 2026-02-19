@@ -1,0 +1,80 @@
+/* 1 */
+.historia-seccion {
+    padding: 250px 25px 100px 10px;
+    text-align: center;
+    background-color: #F2D8DB;
+}
+
+.titulo-historia {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 5.8rem;
+    color: #894D55;
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-weight: 300;
+}
+
+.historia-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+@media (min-width: 768px) {
+    
+    .historia-contenido {
+        flex-direction: row; 
+        justify-content: center;
+        max-width: 1000px; 
+        margin: 0 auto;
+    }
+    
+    .titulo-historia {
+        max-width: 1000px; 
+        margin: 0 auto 20px auto; 
+        text-align: left; 
+        padding-left: 700px; 
+    }
+}
+/* 2 */
+.historia-imagen {
+    position: relative;
+    width: 550px; 
+    height: 750px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; 
+}
+
+.historia-imagen img {
+    
+    width: 70%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 15%; 
+    
+    position: absolute;
+    top: 28%;
+    left: 1%;
+    transform: translate(-85%, -65%);
+}
+/*3*/
+.historia-texto {
+    background-color: #D8A7B1;
+    padding: 40px;
+    border-radius: 50px;
+    max-width: 470px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 400px;
+    margin-left: 500px;  
+}
+
+.historia-texto p {
+    color: #894D55; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 1.5rem;
+}

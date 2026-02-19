@@ -1,0 +1,127 @@
+/* 1 */
+#lo-mas-pedido {
+    background-color: #F2D8DB;
+    padding-top: 10px; 
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center; 
+}
+
+/* 2 */
+.titulo-2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 3.8rem; 
+    font-weight: 500; 
+    color: #894D55; 
+    margin-bottom: 20px;
+}
+
+/* 3 */
+.subtitulo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: #894D55; 
+    max-width: 700px; 
+    margin: 0 auto 60px auto; 
+    font-weight: 500;
+}
+
+/*4*/
+.productos {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px; 
+    max-width: 1250px; 
+    margin: 0 auto 50px auto; 
+}
+/*5*/
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px; 
+}
+/*6*/
+.imagen-marco {
+    background-color: #D8A7B1; 
+    position: relative;
+    width: 80%; 
+    padding-top: 120%; 
+    margin-bottom: 15px;
+    z-index: 10; 
+    box-shadow: 17px 0.5px 0 0 #D8A7B1; 
+}
+.imagen-marco img {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%); 
+    width: 112%; 
+    height: 109%;
+    object-fit: cover;
+    z-index: 2; 
+}
+/*7*/
+.nombre-producto {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 100;
+    color: #894D55; 
+}
+
+/*8*/
+.card::after {
+    content: '';
+    position: absolute;
+    height: 120%; 
+    width: 6px; 
+    top: -10%; 
+    right: -5px; 
+    z-index: 10;
+    background-image: 
+        radial-gradient(circle at center, #894D55 50%, transparent 50%);
+    
+    background-size: 100% 15px; 
+    background-repeat: repeat-y; 
+}
+
+.card::before, .card::after {
+    content: '';
+    position: absolute;
+    height: 75%; 
+    width: 7px;
+    top: 30%; 
+    transform: translateY(-50%);
+    z-index: 10;
+    background-image: 
+        radial-gradient(circle at center, #894D55 20%, transparent 30%);
+
+    background-size: 100% 21px; 
+    background-repeat: repeat-y; 
+}
+
+.card::before {
+    content: none;
+}
+.card:last-child::after {
+    content: none;
+}
+
+/*9 */
+.btn-tortas {
+    display: inline-block;
+    background-color: #BC3E58; 
+    color: white;
+    padding: 13px 13px;
+    border-radius: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.7rem;
+    font-weight: 150;
+    text-decoration: none;
+    border: none;
+    margin-top: 0.5px; 
+    margin-bottom: 50px; 
+}
+

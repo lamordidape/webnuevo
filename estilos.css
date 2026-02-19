@@ -1,0 +1,170 @@
+
+/* --header--*/
+.cabeza {
+    background-color: #D8A7B1; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    
+    padding: 2px 3%; 
+    color: #D8A7B1; 
+    position: relative; 
+}
+.main-nav {
+    flex-grow: 1; 
+}
+
+.main-nav ul {
+    display: flex; 
+    gap: 30px; 
+    list-style: none; 
+}
+.main-nav a {
+    text-decoration: none; 
+    color: #894D55; 
+    font-size: 1.2rem;
+    font-weight: 250;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contenedor {
+    background-color: #D8A7B1;
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+}
+.contenedor img {
+    width: 100px; 
+    height: 100px;
+    object-fit: contain;
+}
+/*ESTILOS DEL CONTACTO*/
+.Contacto {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    font-size: 1.3rem;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #894D55; 
+    margin-left: 40px; 
+}
+
+/* Estilo para la imagen del teléfono */
+.Contacto img {
+    width: 25px; 
+    height: 45px;
+    filter: brightness(0) invert(1); 
+}
+/*ESTILOS DE LA SECCIÓN CONTENEDORA*/
+.promo {
+    background-color: #F2D8DB; 
+    min-height: 550px; 
+    padding: 60px 5% 0 5%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    position: relative;
+    overflow: hidden; 
+}
+
+/*ESTILOS DEL CONTENIDO DE TEXTO */
+.promo .contenedor {
+    flex-basis: 50%; 
+    padding-top: 50px; 
+}
+
+.Titulo {
+    font-size: 3.9rem;
+    font-weight: 400; 
+    color: #894D55; 
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Subtitulo {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #894D55;
+    font-weight: 600; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 40px;
+    text-align: center; 
+    max-width: 80%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*ESTILOS DEL BOTÓN DE COMPRA*/
+.buy-button {
+    display: inline-block;
+    background-color: #BC3E58; 
+    color: white;
+    padding: 12px 35px;
+    border-radius: 18px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 100;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.buy-button:hover {
+    background-color: #b02d41;
+}
+
+/*ESTILOS DEL CONTENEDOR DE LA IMAGEN DE CUPCAKES */
+.cupcake-img {
+    position: relative;
+    width: 50%; 
+    height: 400px; 
+}
+
+/* Estilo para la imagen real de los cupcakes */
+.cupcake-img img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    z-index: 2;
+}
+
+/* DECORACIÓN DE DONAS EN LA ESQUINA INFERIOR IZQUIERDA */
+.img-donas {
+    position: absolute;
+    bottom: -100px; 
+    left: -100px; 
+    width: 250px; 
+    height: 250px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Estilo para la imagen de las donas */
+.img-donas img {
+    width: 100%; 
+    height: 65%;
+    object-fit: cover;
+    position: absolute;
+}
+
+/*LÍNEA DECORATIVA INFERIOR */
+.promo::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #F2D8DB; 
+    z-index: 5;
+}
